@@ -1,0 +1,194 @@
+/*FONT COLORS
+
+dark violet: #412234
+dark blue: #2e4052
+yellow: #ffc857
+green: #bdd9bf
+gray: #d3d0cb
+
+*/
+
+/*FONT STYLE
+
+font-family: 'Oswald', sans-serif;
+font-family: 'Raleway', sans-serif;
+*/
+
+.container-fluid {
+	padding: 0;
+}
+
+/*Heading*/
+
+#headingNav {
+	font-family: 'Raleway', sans-serif;
+	background: #2e4052 !important;
+	color: #ffc857;
+}
+
+#headingNav a,
+#headingNav ul li a{
+	color: #ffc857;
+	padding: 10px;
+	border-radius: 25px;
+	justify-content: center !important;
+}
+
+#headingNav a:hover,
+#headingNav ul li a:hover{
+	/*background-color: #412234;*/
+	color: white;
+}
+
+/*Body*/
+
+
+/*Hero*/
+
+#hero {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #d3d0cb;
+}
+
+#hero .card-cont {
+	width: auto;
+	height: auto;
+	/*max-height: 350px;*/
+}
+
+#hero .card-img {
+	width: auto;
+	height: auto;
+	max-height: 100%;
+}
+.announcement-cont {
+	min-height: 100px;
+	height: 100%;
+}
+
+
+/*Movie Category*/
+
+#home-movie-categ {
+	width: 100%;
+	background-color: #ffc857;
+}
+
+#home-movie-categ li{
+	display: inline-block;
+	margin: auto;
+
+}
+
+#movieCategory .movie-category {
+	margin: 20px 0 20px;
+	/*border: 1px solid #ffc857; */
+}
+
+.movie-category a {
+	border-radius: 0;
+	background-color: #2e4052;
+	color: #ffc857 !important;
+	padding: 10px 0;
+	border: 1px solid #ffc857;  
+}
+
+.movie-category a:hover {
+	background-color: #412234;
+	color: white !important;
+	cursor: pointer;
+}
+
+.movie-category .active-cat {
+	background-color: #ffc857;
+	color: #2e4052 !important;
+}
+
+#movieCategory .card-cont {
+	margin: 10px 10px 20px;
+}
+#movieCategory .card-cont .card {
+	margin: 5px;
+}
+
+#movieCategory .card-cont button {
+	border-radius: 35px;
+	padding: 10px 50px;
+	background-color: #2e4052;
+	color: #ffc857 !important;
+}
+
+#movieCategory .card-cont button:hover {
+	background-color: #412234;
+	color: white !important;
+
+}
+
+
+/*Movie Category hover state*/
+
+#movieCategory .card {
+	position:relative;
+}
+
+#movieCategory .card-hover{
+	position: absolute;
+	z-index: 2;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,0.5);
+
+}
+
+#movieCategory .card-hover-desc{
+	height: 100%;
+	width: 100%;
+}
+
+#movieCategory .card-hover-desc, .card-hover-cont {
+	position: relative;
+	color: white;
+	opacity: 1;
+}
+
+
+/*Footer*/
+
+footer .container {
+	padding-top: 20px;
+	padding-bottom:  20px;
+}
+
+#footer {
+	color: #bdd9bf;
+	font-family: 'Oswald', sans-serif;
+	background-color: #2e4052;
+}
+
+.footer p {
+	margin-bottom: 0;
+}
+
+.linksList {
+	list-style: none;
+	padding: 0px;
+}
+
+.link {
+	color: #bdd9bf;
+	padding: 0 10px;
+}
+
+
+.link:hover {
+	background-color: #412234;
+	color: white !important;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+
+#movie-detail {
+	min-height: 80vh;
+}

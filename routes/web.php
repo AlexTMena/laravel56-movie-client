@@ -12,5 +12,18 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
+});
+
+Route::get('/login', function(){
+	return view('login');
+});
+
+Route::get('/single-movie/{id}', function($id) {
+		// $data = $id;
+	return view('single-movie', compact('id'));
+});
+
+Route::get('/register', function() {
+	return view('register');
 });
