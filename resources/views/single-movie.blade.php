@@ -15,12 +15,7 @@
 					<option value="idNumber2">Branch2</option>
 					<option value="idNumber3">Branch3</option>
 				</select>
-				<label for="movie">Movie</label>
-				<select name="movie" id="movie">
-					<option value="idNumber1">movie1</option>
-					<option value="idNumber2">movie2</option>
-					<option value="idNumber3">movie3</option>
-				</select>
+				
 				<label for="experience">Experience</label>
 				<select name="experience" id="experience">
 					<option value="idNumber1">experience1</option>
@@ -31,7 +26,7 @@
 			</div>
 			<div class="col-sm-12 col-md-6">
 
-				<img class="d-block" src="#" alt="waw">
+				<img class="poster" src="/svg/{{ $id }}.jpg" alt="waw">
 				<a href="/orderForm">Buy</a>
 			</div>
 		</div>
@@ -49,9 +44,9 @@
 					JSON.stringify(movies);
 
 					var movieName = document.createElement('h2');
-					movieName.innerHTML= movies[{{$id}}].name;
+					movieName.innerHTML= movies[{{ $id }}].name;
 					var movieDesc = document.createElement('p');
-					movieDesc.innerHTML= movies[{{$id}}].description;
+					movieDesc.innerHTML= movies[{{ $id }}].description;
 
 					movieCont.appendChild(movieName);
 					movieCont.appendChild(movieDesc)

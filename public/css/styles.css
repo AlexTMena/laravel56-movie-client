@@ -192,3 +192,7 @@ footer .container {
 #movie-detail {
 	min-height: 80vh;
 }
+
+.poster {
+	width: 100%;
+}

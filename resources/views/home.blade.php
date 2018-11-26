@@ -49,15 +49,16 @@
 				.then(response => response.json())
 				.then(movies => {
 					JSON.stringify(movies);
+					console.log(movies);
 					for (var i = 0; i < movies.length; i++){
 
 						var listMovie = document.createElement('div');
 						listMovie.setAttribute('class', 'col-sm-12 col-md-4 col-lg-3');
 						var itemImg = document.createElement('img');
-						itemImg.classList.add('d-block');
-						itemImg.setAttribute('src','./svg/' + movies[i].id + '.jpg');
+						itemImg.classList.add('poster');
+						itemImg.setAttribute('src','./svg/' + (movies[i].id - 1) + '.jpg');
 						var itemAnchor = document.createElement('a');
-						itemAnchor.setAttribute('href', 'http://localhost:8000/single-movie/' + movies[i].id);
+						itemAnchor.setAttribute('href', 'http://localhost:8000/single-movie/' + (movies[i].id -1));
 						itemAnchor.innerHTML= 'Buy';
 						itemAnchor.classList.add('link');
 
