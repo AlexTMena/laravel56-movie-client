@@ -37,12 +37,14 @@
 			let username = document.getElementById('username').value;
 			let email = document.getElementById('email').value
 			let password = document.getElementById('password').value;
+			let c_password = document.getElementById('password-confirm');
 
-			var url = 'http://localhost:8001/api/user';
+			var url = 'http://localhost:8001/api/register';
 			const data = {
 				"name": username,
 				"email": email,
 				"password": password,
+				"password_confirmation": c_password,
 			};
 
 			fetch(url, {
@@ -53,7 +55,7 @@
 			.then(response => response.json())
 			.then(users => console.log('Success:', JSON.stringify(response)))
 			.catch(error => console.error('Error:', error));
-		}
+		};
 	</script>
 
 @endsection
